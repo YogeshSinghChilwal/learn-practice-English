@@ -1,0 +1,311 @@
+{
+  "rootWords": [
+    {
+      "id": "a-an",
+      "root": "A / an",
+      "meaning": "without (के बिना)",
+      "color": "bg-blue-50",
+      "words": [
+        {
+          "id": "abnormal",
+          "word": "Abnormal",
+          "hindi": "असामान्य",
+          "pos": "Adjective",
+          "meaning": "Not normal or usual",
+          "hindiMeaning": "सामान्य या सर्वसामान्य नहीं",
+          "example": "His abnormal behavior concerned the teachers.",
+          "hindiExample": "उसका असामान्य व्यवहार शिक्षकों को चिंता देता है।",
+          "synonyms": [
+            {
+              "word": "Unusual",
+              "hindi": "असामान्य",
+              "example": "An unusual situation"
+            },
+            {
+              "word": "Irregular",
+              "hindi": "अनियमित",
+              "example": "Irregular pattern"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "Normal",
+              "hindi": "सामान्य",
+              "example": "Normal behavior"
+            },
+            {
+              "word": "Usual",
+              "hindi": "आम",
+              "example": "Usual routine"
+            }
+          ]
+        },
+        {
+          "id": "absent",
+          "word": "Absent",
+          "hindi": "अनुपस्थित",
+          "pos": "Adjective",
+          "meaning": "Not present in a place",
+          "hindiMeaning": "किसी स्थान पर उपस्थित नहीं",
+          "example": "She was absent from the meeting.",
+          "hindiExample": "वह मीटिंग से अनुपस्थित थी।",
+          "synonyms": [
+            {
+              "word": "Missing",
+              "hindi": "लापता",
+              "example": "A missing piece"
+            },
+            {
+              "word": "Away",
+              "hindi": "दूर",
+              "example": "He is away on vacation"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "Present",
+              "hindi": "उपस्थित",
+              "example": "Everyone was present"
+            },
+            {
+              "word": "Here",
+              "hindi": "यहाँ",
+              "example": "I am here"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act",
+      "root": "Act, -act",
+      "meaning": "do (करना)",
+      "color": "bg-green-50",
+      "words": [
+        {
+          "id": "action",
+          "word": "Action",
+          "hindi": "कार्य",
+          "pos": "Noun",
+          "meaning": "Something done; a deed",
+          "hindiMeaning": "कुछ किया जाना; एक कार्य",
+          "example": "Quick action was needed.",
+          "hindiExample": "तेजी से कार्रवाई की जरूरत थी।",
+          "synonyms": [
+            {
+              "word": "Act",
+              "hindi": "कार्य",
+              "example": "An act of kindness"
+            },
+            {
+              "word": "Deed",
+              "hindi": "कर्म",
+              "example": "A good deed"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "Inaction",
+              "hindi": "निष्क्रियता",
+              "example": "Inaction led to failure"
+            }
+          ]
+        },
+        {
+          "id": "active",
+          "word": "Active",
+          "hindi": "सक्रिय",
+          "pos": "Adjective",
+          "meaning": "Engaged in action; busy",
+          "hindiMeaning": "कार्य में लगा हुआ; व्यस्त",
+          "example": "She leads an active lifestyle.",
+          "hindiExample": "वह एक सक्रिय जीवन शैली जीती है।",
+          "synonyms": [
+            {
+              "word": "Busy",
+              "hindi": "व्यस्त",
+              "example": "A busy day"
+            },
+            {
+              "word": "Energetic",
+              "hindi": "ऊर्जावान",
+              "example": "An energetic person"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "Inactive",
+              "hindi": "निष्क्रिय",
+              "example": "An inactive volcano"
+            },
+            {
+              "word": "Lazy",
+              "hindi": "आलसी",
+              "example": "A lazy person"
+            }
+          ]
+        },
+        {
+          "id": "actor",
+          "word": "Actor",
+          "hindi": "अभिनेता",
+          "pos": "Noun",
+          "meaning": "A person who performs in plays or films",
+          "hindiMeaning": "जो नाटकों या फिल्मों में प्रदर्शन करता है",
+          "example": "The actor delivered an excellent performance.",
+          "hindiExample": "अभिनेता ने एक उत्कृष्ट प्रदर्शन दिया।",
+          "synonyms": [
+            {
+              "word": "Performer",
+              "hindi": "प्रदर्शनकारी",
+              "example": "A skilled performer"
+            }
+          ],
+          "antonyms": []
+        }
+      ]
+    },
+    {
+      "id": "anti",
+      "root": "Anti",
+      "meaning": "against, opposite of (के विरुद्ध, विपरीत)",
+      "color": "bg-red-50",
+      "words": [
+        {
+          "id": "antibody",
+          "word": "Antibody",
+          "hindi": "प्रतिरक्षी",
+          "pos": "Noun",
+          "meaning": "A protein that fights against diseases",
+          "hindiMeaning": "एक प्रोटीन जो बीमारियों के विरुद्ध लड़ता है",
+          "example": "Antibodies protect your immune system.",
+          "hindiExample": "प्रतिरक्षी आपकी प्रतिरक्षा प्रणाली की रक्षा करते हैं।",
+          "synonyms": [
+            {
+              "word": "Immune response",
+              "hindi": "प्रतिरक्षा प्रतिक्रिया",
+              "example": "Strong immune response"
+            }
+          ],
+          "antonyms": []
+        },
+        {
+          "id": "anticipate",
+          "word": "Anticipate",
+          "hindi": "प्रत्याशा करना",
+          "pos": "Verb",
+          "meaning": "To expect something to happen",
+          "hindiMeaning": "किसी चीज़ के होने की उम्मीद करना",
+          "example": "I anticipate the meeting will be productive.",
+          "hindiExample": "मैं प्रत्याशा करता हूँ कि बैठक उत्पादक होगी।",
+          "synonyms": [
+            {
+              "word": "Expect",
+              "hindi": "अपेक्षा करना",
+              "example": "We expect good results"
+            },
+            {
+              "word": "Foresee",
+              "hindi": "भविष्य देखना",
+              "example": "They foresee success"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "Surprise",
+              "hindi": "आश्चर्य",
+              "example": "Unexpected surprise"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aqua",
+      "root": "Aqua",
+      "meaning": "water (पानी)",
+      "color": "bg-cyan-50",
+      "words": [
+        {
+          "id": "aquatic",
+          "word": "Aquatic",
+          "hindi": "जलीय",
+          "pos": "Adjective",
+          "meaning": "Related to water or water sports",
+          "hindiMeaning": "पानी या जल खेलों से संबंधित",
+          "example": "Aquatic sports are popular in summer.",
+          "hindiExample": "जलीय खेल गर्मियों में लोकप्रिय हैं।",
+          "synonyms": [
+            {
+              "word": "Water-based",
+              "hindi": "जल-आधारित",
+              "example": "Water-based activities"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "Terrestrial",
+              "hindi": "स्थलीय",
+              "example": "Terrestrial animals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "auto",
+      "root": "Auto",
+      "meaning": "self, same, one (स्वयं, समान, एक)",
+      "color": "bg-yellow-50",
+      "words": [
+        {
+          "id": "automatic",
+          "word": "Automatic",
+          "hindi": "स्वचालित",
+          "pos": "Adjective",
+          "meaning": "Working by itself without human control",
+          "hindiMeaning": "मानव नियंत्रण के बिना अपने आप काम करना",
+          "example": "The door opener is automatic.",
+          "hindiExample": "दरवाजे का खुलना स्वचालित है।",
+          "synonyms": [
+            {
+              "word": "Automated",
+              "hindi": "स्वचालित",
+              "example": "Automated system"
+            }
+          ],
+          "antonyms": [
+            {
+              "word": "Manual",
+              "hindi": "मैनुअल",
+              "example": "Manual control"
+            }
+          ]
+        },
+        {
+          "id": "automobile",
+          "word": "Automobile",
+          "hindi": "स्वचालित वाहन",
+          "pos": "Noun",
+          "meaning": "A car or vehicle that moves on its own",
+          "hindiMeaning": "कार या वाहन जो अपने आप चलता है",
+          "example": "The automobile industry is growing.",
+          "hindiExample": "ऑटोमोबाइल उद्योग बढ़ रहा है।",
+          "synonyms": [
+            {
+              "word": "Car",
+              "hindi": "कार",
+              "example": "A new car"
+            },
+            {
+              "word": "Vehicle",
+              "hindi": "वाहन",
+              "example": "A motor vehicle"
+            }
+          ],
+          "antonyms": []
+        }
+      ]
+    }
+  ]
+}
