@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo } from 'react';
+import { Suspense, useEffect, useMemo } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useQuizGenerator, QuizWord } from '@/hooks/useQuizGenerator';
 import { useRootWordTracking } from '@/hooks/useRootWordTracking';
@@ -11,12 +11,12 @@ import { QuizResults } from '@/components/quiz/QuizResults';
 import Link from 'next/link';
 import { ChevronLeft } from 'lucide-react';
 
-export default function QuizPage() {
+// Inner component that uses useSearchParams — must be inside Suspense
+function QuizPageInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const mode = searchParams.get('mode') as 'all' | 'visited' | null;
 
-  // Derive showModeSelector directly from searchParams — no useState needed
   const showModeSelector = !mode;
 
   const { getStatus, loaded: trackingLoaded } = useRootWordTracking();
@@ -38,7 +38,6 @@ export default function QuizPage() {
     resetQuiz,
   } = useQuizGenerator();
 
-  // Compute visitedCount with useMemo — avoids setState inside useEffect
   const visitedCount = useMemo(() => {
     if (!trackingLoaded || !vocabularyData?.rootWords?.length) return 0;
     return vocabularyData.rootWords.filter(
@@ -46,7 +45,6 @@ export default function QuizPage() {
     ).length;
   }, [trackingLoaded, vocabularyData, getStatus]);
 
-  // Start quiz when mode is selected
   useEffect(() => {
     if (mode && vocabularyData && vocabularyData.rootWords.length > 0 && !quizStarted) {
       const quizWords: QuizWord[] = [];
@@ -100,7 +98,6 @@ export default function QuizPage() {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* Mode Selector Modal */}
       {showModeSelector && (
         <QuizModeSelector
           onSelectMode={(selectedMode) => {
@@ -111,7 +108,6 @@ export default function QuizPage() {
         />
       )}
 
-      {/* Quiz Interface */}
       {quizStarted && !quizCompleted && currentQuestion && (
         <>
           <div className="absolute top-4 left-4 z-10">
@@ -138,10 +134,24 @@ export default function QuizPage() {
         </>
       )}
 
-      {/* Results */}
       {quizCompleted && (
         <QuizResults result={getResults()} onRetry={handleRetryQuiz} />
       )}
     </main>
+  );
+}
+
+// Outer component wraps with Suspense — required by Next.js for useSearchParams
+export default function QuizPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+          <p className="text-gray-500">Loading...</p>
+        </div>
+      }
+    >
+      <QuizPageInner />
+    </Suspense>
   );
 }
